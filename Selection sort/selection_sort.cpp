@@ -45,12 +45,12 @@ int main()
 {
   FILE *fp1;
   int i;
-  int arr[1000];
-  fp1 = fopen("random_1000.txt", "r");
+  int arr[100000];
+  fp1 = fopen("random_100000.txt", "r");
 
   while (!feof(fp1))
   {
-    for(i=0; i < 1000; ++i){
+    for(i=0; i < 100000; ++i){
       fscanf(fp1, "%d", &arr[i]);
     }
   }
@@ -74,7 +74,7 @@ int main()
     
     //return 0;
 
-  cout <<"Array ordenado: \n";
-  printVector(arr, n);
+  //cout <<"Array ordenado: \n";
+  //printVector(arr, n);
   return 0;
 }
